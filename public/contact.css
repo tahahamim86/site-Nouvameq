@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.text
+{
+  position: relative;
+  z-index: 1;
+}
+
+.text h1
+{  font-size: 3rem;
+    font-weight:  bold 400;
+      color: antiquewhite;
+position: relative;
+      left: 0;
+}
+    
+
+
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: orange;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  border-radius: 15px;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: .5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+
+
+@media (max-width: 700px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 100px;
+  }
+  .text{
+    padding-top:25px;
+  }
+  .text h2
+  {
+    font-size: 2em;
+  }
+  .text h3
+  {
+    font-size: 1em;
+  }
+}
+@media (max-width: 900px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 80px;
+  }
+  .text h2
+  {
+    font-size: 2em;
+  }
+  .text h3
+  {
+    font-size: 1em;
+  }
+  .text p{
+    font-size:1em;
+  }
+}
+.contact-section{
+    background: center;
+    
+padding: 40px 0;
+
+}
+.contact-section h1{
+    text-align: center;
+    color:rgb(244, 243, 245);
+
+}
+
+.contact-form{
+    max-width: 600px;
+    margin:auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-btn{
+    float : right;
+    border:0;
+    background: #34495e;
+color:#fff;
+padding: 12px 50px;
+border-radius: 20px;
+cursor: pointer;
+transition: 0.5s;
+}
+.contact-form-btn:hover{
+    background-color: #2980b9;
+}
+
+.contact-section{
+    background: center;
+    margin-top: 85px;
+padding: 40px 0;
+
+}
+.contact-section p{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: bolder;
+
+}
+.contact-section label{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+
+}
+.border{
+    width:100px;
+    height:10px;
+    background:#34495e;
+    margin: 40px auto;
+}
+.contact-form{
+    max-width: 600px;
+    margin:auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-form-text{
+    display: block;
+    width : 100%;
+    box-sizing: border-box;
+    margin:16px 0;
+    border:0;
+    background:rgba(240, 235, 235, 0.514);
+    padding:20px 40px;
+   outline: none;
+   color:rgb(6, 66, 230);
+   transition: 0.5s;
+   font-size: 1.5rem;
+   font-weight:bolder;
+
+}
+.contact-form-text:hover{
+  
+    background:rgb(255, 255, 255);
+ 
+
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px #cce925;
+}
+textarea.contact-form-text{
+    resize: none;
+    height:120px;
+}
+/*.contact-form-btn{
+    float : right;
+    border:0;
+    background: #3865f7;
+color:#fff;
+padding: 12px 50px;
+border-radius: 20px;
+height: 65px;
+cursor: pointer;
+transition: 0.5s;
+}
+.contact-form-btn:hover{
+    background-color: #e98c22;
+}
